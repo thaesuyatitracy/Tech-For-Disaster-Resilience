@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethysts | Water Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+                <img src="../media/logo.png" alt="logo" class="nav-logo">
+                <span class="brand-text">Amethysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="problem.html">Natural Hazards</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore Technologies</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="explore_earth.html" class="dropdown-item">Earth (Seismic)</a></li>
+                            <li><a href="explore_water.html" class="dropdown-item">Water (Floods)</a></li>
+                            <li><a href="explore_air.html" class="dropdown-item">Wind (Cyclones)</a></li>
+                            <li><a href="explore_fire.html" class="dropdown-item">Fire (Wildfires)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-primary rounded-pill ms-2" data-bs-toggle="offcanvas" data-bs-target="#tipsOffcanvas" title="Quick Safety Tips">
+                            <i class="bi bi-lightbulb"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="tipsOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="bi bi-shield-check me-2"></i>Quick Safety Tips</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted small mb-3 fw-bold">Small habits that save lives in Myanmar.</p>
+            <ul class="list-group quick-facts mb-4">
+                <li class="list-group-item"><i class="bi bi-phone"></i> Save local emergency numbers in your phone.</li>
+                <li class="list-group-item"><i class="bi bi-bag-check"></i> Pack a small go-bag with water, snacks, power bank.</li>
+                <li class="list-group-item"><i class="bi bi-people"></i> Agree on a family meeting point.</li>
+                <li class="list-group-item"><i class="bi bi-megaphone"></i> Follow official warnings only.</li>
+                <li class="list-group-item"><i class="bi bi-house-heart"></i> Know your nearest shelter.</li>
+            </ul>
+            <a href="pages/problem.html" class="offcanvas-action-btn">Learn More About Hazards</a>
+        </div>
+    </div>
+
+    <div class="explore-hero water-theme">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6 hero-text-content" data-aos="fade-right">
+                    <div class="element-icon-badge mb-3"><i class="bi bi-water"></i></div>
+                    <h1 class="fw-bold mb-3 display-3">Water & <br> Flood Technologies</h1>
+                    <p class="fs-5 mb-4">Discover how water-level sensors, weather radar, and forecasting systems help monitor rising water levels and warn communities about possible floods.</p>
+                    <a href="#content-section" class="btn hero-btn">Explore The Tech</a>
+                    <a href="../index.html" class="return-btn">Return to Home</a>
+                </div>
+                <div class="col-12 col-lg-6 hero-image-content d-none d-lg-block" data-aos="fade-left">
+                    <img src="../media/exploreflood.jpg" alt="Flooded Area" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-blob d-none d-lg-block"></div>
+    </div>
+
+    <div class="container">
+        <ul class="breadcrumb-custom">
+            <li><a href="../index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+            <li><a href="problem.html">Explore</a></li>
+            <li class="active">Water</li>
+        </ul>
+    </div>
+
+    <div id="content-section" class="container py-4 py-lg-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold text-dark-blue display-5">Predicting the Flow</h2>
+            <p class="fs-5 text-muted mx-auto max-w-700">Floods can damage homes and infrastructure. Technology monitors rainfall and water levels, giving communities time to prepare before danger strikes.</p>
+        </div>
+
+        <div class="row align-items-stretch mb-5 g-3 g-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-right">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/water_tracking.png" alt="IoT Water Sensors" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon water-bg"><i class="bi bi-speedometer2"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">IoT Water-Level Sensors</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Placed along rivers and bridges, these sensors constantly measure water height.</p>
+                            <ul class="feature-list">
+                                <li><strong>Ultrasonic Sensors:</strong> Use sound waves.</li>
+                                <li><strong>Real-Time Monitoring:</strong> Continuous updates.</li>
+                                <li><strong>Early Alerts:</strong> Warns at dangerous levels.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#waterSensorModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/weather_forecast.jpg" alt="Weather Radar" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon water-bg"><i class="bi bi-cloud-rain-heavy"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Weather Radar & Forecasting</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">We need to know how much rain is coming. Doppler radar tracks storm movement.</p>
+                            <ul class="feature-list">
+                                <li><strong>Doppler Radar:</strong> Tracks rainfall.</li>
+                                <li><strong>Weather Forecasting:</strong> Predicts heavy rain.</li>
+                                <li><strong>Flood Prediction:</strong> Estimates possible flooding.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#radarModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/tsunami_warning.png" alt="Tsunami Warning" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon water-bg"><i class="bi bi-tsunami"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Tsunami Warning Systems</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">These systems use ocean buoys and seismic data to detect underwater earthquakes.</p>
+                            <ul class="feature-list">
+                                <li><strong>Ocean Buoys:</strong> Measure wave heights.</li>
+                                <li><strong>Seismic Detection:</strong> Detect underwater quakes.</li>
+                                <li><strong>Coastal Alerts:</strong> Warn people to move higher.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#tsunamiModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <div class="everyday-tech-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="feature-icon water-bg me-3"><i class="bi bi-phone"></i></div>
+                        <h3 class="fw-bold text-dark-blue mb-0">Everyday Tech You Can Use</h3>
+                    </div>
+                    <p class="text-muted mb-4">Before you see water on the road, your phone can warn you. Here are simple tools to help you monitor rainfall and stay safe during flood season.</p>
+
+                    <div class="row g-3 g-md-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper">
+                                    <img src="../media/app_moezela.jpg" alt="Moezala App" class="app-image">
+                                </div>
+                                <div class="app-icon-wrapper water-app-icon"><i class="bi bi-cloud-rain"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Moezala App</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> <em>Moezala</em> (Available on Google Play).</p>
+                                <p class="text-muted small mb-0">This app shows weather forecasts, rainfall information, and severe weather warnings specifically for Myanmar. It is a great tool to check before you travel during the monsoon.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper">
+                                    <img src="../media/app_floodmonitoring.png" alt="Flood Monitoring" class="app-image">
+                                </div>
+                                <div class="app-icon-wrapper water-app-icon"><i class="bi bi-bar-chart-line"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Global Flood Monitor</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> <em>Global Flood Monitor</em> website.</p>
+                                <p class="text-muted small mb-0">This real flood-monitoring map shows water levels and flood-risk information for rivers around the world. You can use it to see if major rivers near you are rising.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper">
+                                    <img src="../media/floodsafety.avif" alt="Flood Home Prep" class="app-image">
+                                </div>
+                                <div class="app-icon-wrapper water-app-icon"><i class="bi bi-house-door"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Flood Home Preparation</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> A simple home check.</p>
+                                <p class="text-muted small mb-0">Place sandbags near doorways and store important items above floor level. Taking photos of your preparation helps you remember what to do next time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prep-section-alt water-prep">
+        <div class="container py-3">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Stay Safe, Stay Dry</span>
+                <h2 class="fw-bold text-dark-blue display-5">Flood Preparedness</h2>
+                <p class="fs-5 text-muted mx-auto max-w-700">Know what to do before, during, and after a flood, and pack the right items in advance.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <div class="prep-card h-100 d-flex flex-column justify-content-center p-3">
+                        <img src="../media/poster_water.jpg" alt="Flood Preparedness Poster" class="img-fluid rounded-4 shadow-sm w-100">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-up">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon water-bg"><i class="bi bi-backpack2"></i></div>
+                        <h4><i class="bi bi-box-seam me-2"></i>Special Flood-Kit Items</h4>
+                        <div class="supply-grid">
+                            <div class="supply-item"><i class="bi bi-droplet-half"></i>Water purification</div>
+                            <div class="supply-item"><i class="bi bi-cloud-rain"></i>Raincoat</div>
+                            <div class="supply-item"><i class="bi bi-umbrella"></i>Waterproof boots</div>
+                            <div class="supply-item"><i class="bi bi-phone"></i>Waterproof pouch</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-left">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon water-bg"><i class="bi bi-person-check"></i></div>
+                        <h4><i class="bi bi-list-check me-2"></i>Habits to Practise</h4>
+                        <div class="habit-item"><div class="habit-num">1</div><p>Follow instructions from local authorities.</p></div>
+                        <div class="habit-item"><div class="habit-num">2</div><p>Keep drinking water in clean containers.</p></div>
+                        <div class="habit-item"><div class="habit-num">3</div><p>Never walk, swim, or drive through floodwater.</p></div>
+                        <div class="habit-item"><div class="habit-num">4</div><p>Know the nearest evacuation centre.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-12">
+                    <h3 class="fw-bold text-dark-blue mb-4 text-center">Before, During & After a Flood</h3>
+                    <ul class="nav nav-tabs prep-tabs" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#flood-before" type="button">Before</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#flood-during" type="button">During</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#flood-after" type="button">After</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content prep-tab-content">
+                        <div class="tab-pane fade show active" id="flood-before">
+                            <h5 class="fw-bold text-dark-blue mb-3"><i class="bi bi-shield-check me-2"></i>Prepare & Prevent</h5>
+                            <div class="habit-item"><div class="habit-num">1</div><p>Plan evacuation routes to higher ground.</p></div>
+                            <div class="habit-item"><div class="habit-num">2</div><p>Monitor weather forecasts daily during monsoon season.</p></div>
+                            <div class="habit-item"><div class="habit-num">3</div><p>Clean drainage systems around your home.</p></div>
+                        </div>
+                        <div class="tab-pane fade" id="flood-during">
+                            <h5 class="fw-bold text-dark-blue mb-3"><i class="bi bi-exclamation-triangle me-2"></i>Stay Safe During the Flood</h5>
+                            <div class="habit-item"><div class="habit-num">1</div><p>Never walk, swim, or drive through floodwater.</p></div>
+                            <div class="habit-item"><div class="habit-num">2</div><p>Stay away from floodwater, it may be contaminated or hiding dangerous debris.</p></div>
+                            <div class="habit-item"><div class="habit-num">3</div><p>Move to higher ground when necessary.</p></div>
+                        </div>
+                        <div class="tab-pane fade" id="flood-after">
+                            <h5 class="fw-bold text-dark-blue mb-3"><i class="bi bi-house-check me-2"></i>After the Flood</h5>
+                            <div class="habit-item"><div class="habit-num">1</div><p>Only return home when authorities say it is safe.</p></div>
+                            <div class="habit-item"><div class="habit-num">2</div><p>Check for structural damage before entering your home.</p></div>
+                            <div class="habit-item"><div class="habit-num">3</div><p>Boil or purify drinking water before use.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="waterSensorModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Water-Level Sensors</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/lxhWYt02ExE" title="IoT Water Level Monitoring System" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">This video shows how ultrasonic sensors are installed on rivers and bridges to monitor water levels in real-time.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="radarModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Weather Radar & AI</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/VdcXO7SJAfA" title="How Weather Radar Works" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">Learn how Doppler radar detects precipitation and how AI models use this data to predict flooding.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tsunamiModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Tsunami Warning Systems</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/C6_XKPgVpKk" title="Tsunami Science and Tsunami Warning Systems" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">Learn how ocean buoys and seismic sensors detect underwater earthquakes and issue tsunami warnings.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-section" class="quiz-section py-5">
+        <div class="container py-3 py-lg-4">
+            <h2 class="fw-bold text-dark-blue text-center display-6 mb-5 px-2" data-aos="fade-up">Test Your Knowledge | Flood & Tsunami Tech</h2>
+            <div class="carousel slide" data-bs-interval="false" id="quizCarouselWater">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#quizCarouselWater" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#quizCarouselWater" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#quizCarouselWater" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#quizCarouselWater" data-bs-slide-to="3"></button>
+                    <button data-bs-target="#quizCarouselWater" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner" data-aos="zoom-in">
+                    <div class="carousel-item active">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 1</h3>
+                            <p class="text-muted mb-4 fs-5">What do IoT water-level sensors constantly measure?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Water height/level</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Wind speed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 2</h3>
+                            <p class="text-muted mb-4 fs-5">What does Doppler radar track to help predict floods?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Rainfall and storm movement</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Ocean temperatures</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 3</h3>
+                            <p class="text-muted mb-4 fs-5">What technology is used to detect underwater earthquakes for tsunamis?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Ocean buoys and seismic sensors</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Weather satellites</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 4</h3>
+                            <p class="text-muted mb-4 fs-5">Which app is recommended to see if major rivers near you are rising?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Global Flood Monitor</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Zoom Earth</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 5</h3>
+                            <p class="text-muted mb-4 fs-5">What should you do during a flood?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Swim through floodwater</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Never walk, swim, or drive through floodwater</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselWater" data-bs-slide="prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="carousel-control-next custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselWater" data-bs-slide="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="correctAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-check-circle-fill text-success display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Correct!</h2>
+                    <p class="text-muted">Great job! You understand this technology well.</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wrongAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-x-circle-fill text-danger display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Try Again</h2>
+                    <p class="text-muted">That's not quite right. Review the information above and try again!</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex w-100" id="topbtn">
+         <div class="text-center py-3 justify-content-center">
+            <a href="" class="btn btn-sm btn-outline-secondary rounded-pill">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div> 
+    </div>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact with Us</h5>
+                    <p class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i> amethysts.pbl@gmail.com</p>
+                    <p class="mb-4 text-white-50"><i class="bi bi-geo-alt me-2"></i> Mandalay, Myanmar</p>
+                    <div class="d-flex social-icons">
+                        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="problem.html">Natural Hazards</a></li>
+                        <li><a href="explore_earth.html">Explore Technologies</a></li>
+                        <li><a href="about.html">About Us & Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Our Inspiration</h5>
+                    <div class="footer-quote">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="mb-0">Disaster risk reduction is not just about saving lives; it is about securing livelihoods, protecting investments, and building a sustainable future for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-light opacity-25">
+            <div class="text-center small text-white-50">
+                <p class="mb-1">&copy; Copyright 2026 Amethysts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>

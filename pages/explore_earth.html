@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethysts | Earth Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+                <img src="../media/logo.png" alt="logo" class="nav-logo">
+                <span class="brand-text">Amethysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="problem.html">Natural Hazards</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore Technologies</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="explore_earth.html" class="dropdown-item">Earth (Seismic)</a></li>
+                            <li><a href="explore_water.html" class="dropdown-item">Water (Floods)</a></li>
+                            <li><a href="explore_air.html" class="dropdown-item">Wind (Cyclones)</a></li>
+                            <li><a href="explore_fire.html" class="dropdown-item">Fire (Wildfires)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-primary rounded-pill ms-2" data-bs-toggle="offcanvas" data-bs-target="#tipsOffcanvas" title="Quick Safety Tips">
+                            <i class="bi bi-lightbulb"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="tipsOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="bi bi-shield-check me-2"></i>Quick Safety Tips</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted small mb-3 fw-bold">Small habits that save lives in Myanmar.</p>
+            <ul class="list-group quick-facts mb-4">
+                <li class="list-group-item"><i class="bi bi-phone"></i> Save local emergency numbers in your phone.</li>
+                <li class="list-group-item"><i class="bi bi-bag-check"></i> Pack a small go-bag with water, snacks, power bank.</li>
+                <li class="list-group-item"><i class="bi bi-people"></i> Agree on a family meeting point.</li>
+                <li class="list-group-item"><i class="bi bi-megaphone"></i> Follow official warnings only.</li>
+                <li class="list-group-item"><i class="bi bi-house-heart"></i> Know your nearest shelter.</li>
+            </ul>
+            <a href="pages/problem.html" class="offcanvas-action-btn">Learn More About Hazards</a>
+        </div>
+    </div>
+
+    <div class="explore-hero earth-theme">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6 hero-text-content" data-aos="fade-right">
+                    <div class="element-icon-badge mb-3"><i class="bi bi-globe-americas"></i></div>
+                    <h1 class="fw-bold mb-3 display-3">Earth & <br> Seismic Technologies</h1>
+                    <p class="fs-5 mb-4">Discover how seismic sensors, satellite imagery, and monitoring systems help detect earthquakes and identify early signs of landslides.</p>
+                    <a href="#content-section" class="btn hero-btn">Explore The Tech</a>
+                    <a href="../index.html" class="return-btn">Return to Home</a>
+                </div>
+                <div class="col-12 col-lg-6 hero-image-content d-none d-lg-block" data-aos="fade-left">
+                    <img src="../media/exploreearth.webp" alt="Earthquake Mandalay" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-blob d-none d-lg-block"></div>
+    </div>
+
+    <div class="container">
+        <ul class="breadcrumb-custom">
+            <li><a href="../index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+            <li><a href="problem.html">Explore</a></li>
+            <li class="active">Earth</li>
+        </ul>
+    </div>
+
+    <div id="content-section" class="container py-4 py-lg-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold text-dark-blue display-5">Detecting the Unseen</h2>
+            <p class="fs-5 text-muted mx-auto max-w-700">Earthquakes and landslides happen with little warning. Modern tech helps scientists monitor ground movement and alert communities to stay safe.</p>
+        </div>
+
+        <div class="row align-items-stretch mb-5 g-3 g-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-right">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/earth_earthquake.png" alt="Earthquake Tech" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon earth-bg"><i class="bi bi-broadcast"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Earthquake Early Warning</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Earthquakes release fast P-Waves and destructive S-Waves. Systems detect P-Waves immediately.</p>
+                            <ul class="feature-list">
+                                <li><strong>P-Wave Detection:</strong> Fast, harmless waves.</li>
+                                <li><strong>Digital Alerts:</strong> Sent before S-Waves arrive.</li>
+                                <li><strong>Saves Lives:</strong> Gives seconds to react.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#seismometerModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/earth_landslide.png" alt="Landslide Tech" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon earth-bg"><i class="bi bi-moisture"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Landslide Monitoring</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">IoT devices buried in the soil detect early signs of landslides. They monitor soil tilt and moisture levels.</p>
+                            <ul class="feature-list">
+                                <li><strong>Tilt Sensors:</strong> Detect ground movement.</li>
+                                <li><strong>Moisture Sensors:</strong> Measure water in soil.</li>
+                                <li><strong>Rain Gauges:</strong> Track rainfall.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#landslideModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/satellite_imaging.png" alt="Satellite Imaging" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon earth-bg"><i class="bi bi-radar"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Satellite Ground Imaging</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Satellites use radar to measure tiny changes in the Earth's surface over time.</p>
+                            <ul class="feature-list">
+                                <li><strong>InSAR Tech:</strong> Detects subtle ground shifts.</li>
+                                <li><strong>Mapping:</strong> Creates risk maps for landslides.</li>
+                                <li><strong>Long-term Tracking:</strong> Monitors slow-moving faults.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#communityModal"><i class="bi bi-info-circle me-2"></i> Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <div class="everyday-tech-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="feature-icon earth-bg me-3"><i class="bi bi-phone"></i></div>
+                        <h3 class="fw-bold text-dark-blue mb-0">Everyday Tech You Can Use</h3>
+                    </div>
+                    <p class="text-muted mb-4">You don't need a lab to stay safe. These free apps and simple habits can help you and your family prepare for earthquakes and landslides.</p>
+
+                    <div class="row g-3 g-md-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper">
+                                    <img src="../media/app_myshake.jpg" alt="MyShake App" class="app-image">
+                                </div>
+                                <div class="app-icon-wrapper earth-app-icon"><i class="bi bi-phone-vibrate"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">MyShake App</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> <em>MyShake</em> (Available on App Store & Google Play).</p>
+                                <p class="text-muted small mb-0">This app turns your phone into a mini-seismometer. It detects shaking and can send alerts. Note: It is mainly designed for supported areas, so check if it works in your region.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper">
+                                    <img src="../media/app_tggroup.png" alt="Telegram Alert" class="app-image">
+                                </div>
+                                <div class="app-icon-wrapper earth-app-icon"><i class="bi bi-chat-dots"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Telegram Alert Groups</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> Search for <em>MM Earthquake Alert</em> on Telegram.</p>
+                                <p class="text-muted small mb-0">This independently run channel shares real-time updates on earthquake locations, magnitudes, and times. It is not an official government channel, but it is a fast way to see recent activity.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper">
+                                    <img src="../media/earthsafety.png" alt="Home Safety" class="app-image">
+                                </div>
+                                <div class="app-icon-wrapper earth-app-icon"><i class="bi bi-house-check"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Home Safety Check</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> A 10-minute family drill.</p>
+                                <p class="text-muted small mb-0">Secure heavy furniture (like bookshelves) to the wall. Practice the "Drop, Cover, and Hold On" position with your family so everyone knows what to do.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prep-section earth-prep">
+        <div class="container py-3">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Be Ready, Not Scared</span>
+                <h2 class="fw-bold text-dark-blue display-5">Earthquake Preparedness</h2>
+                <p class="fs-5 text-muted mx-auto max-w-700">Practise simple habits - they can protect you and your family when the ground shakes.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <div class="prep-card h-100 d-flex flex-column justify-content-center p-3">
+                        <img src="../media/poster_earth.jpg" alt="Earthquake Preparedness Poster" class="img-fluid rounded-4 shadow-sm w-100">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-up">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon earth-bg"><i class="bi bi-shield-check"></i></div>
+                        <h4>Drop, Cover, Hold On</h4>
+                        <div class="row g-2 mb-3">
+                            <div class="col-12">
+                                <div class="dch-visual">
+                                    <i class="bi bi-arrow-down-circle"></i>
+                                    <h6>Drop</h6><p>Get down</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="dch-visual">
+                                    <i class="bi bi-shield-fill-check"></i>
+                                    <h6>Cover</h6><p>Under a desk</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="dch-visual">
+                                    <i class="bi bi-hand-index-thumb"></i>
+                                    <h6>Hold On</h6><p>To shelter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn action-btn w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#drillModal">
+                            <i class="bi bi-play-circle me-2"></i> Watch Drill Video
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-left">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon earth-bg"><i class="bi bi-person-check"></i></div>
+                        <h4><i class="bi bi-list-check me-2"></i>Simple Habits</h4>
+                        <div class="habit-item"><div class="habit-num">1</div><p>Help younger children and elderly understand safety.</p></div>
+                        <div class="habit-item"><div class="habit-num">2</div><p>Know how to receive official earthquake warnings.</p></div>
+                        <div class="habit-item"><div class="habit-num">3</div><p>Practise evacuation drills at home and school.</p></div>
+                        <div class="habit-item"><div class="habit-num">4</div><p>Discuss an emergency meeting point with family.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="prep-card">
+                        <div class="prep-icon earth-bg"><i class="bi bi-bag-check"></i></div>
+                        <h4><i class="bi bi-pencil-square me-2"></i>Small Emergency Items to Carry Every Day</h4>
+                        <p class="text-muted mb-4">Keep these small items in your school bag so you're ready if a disaster strikes when you're away from home.</p>
+                        <div class="supply-grid">
+                            <div class="supply-item"><i class="bi bi-droplet"></i>Small bottle of water</div>
+                            <div class="supply-item"><i class="bi bi-cash"></i>A little cash</div>
+                            <div class="supply-item"><i class="bi bi-bag"></i>Packet of biscuits</div>
+                            <div class="supply-item"><i class="bi bi-battery-charging"></i>Power bank</div>
+                            <div class="supply-item"><i class="bi bi-hand-thumbs-up"></i>Hand sanitizer</div>
+                            <div class="supply-item"><i class="bi bi-mask"></i>Face mask</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="seismometerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>How Seismometers Work</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/geNiqkgZDXA" title="How Seismometers Work" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">This video demonstrates how a seismometer detects ground movement and converts it into a digital reading.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="communityModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-people me-2"></i>Satellite Imaging & Communities</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-3 p-md-4">
+                    <p class="text-muted">Satellite imaging helps planners avoid building on unstable ground, and communities can practice earthquake drills to ensure everyone knows what to do when an alert is received.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="landslideModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-moisture me-2"></i>Landslide Monitoring</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/CgfjbnwU7JQ" title="Landslide Awareness and Preparedness" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">See how IoT sensors are deployed in mountainous regions to detect early signs of landslides.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="drillModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Earthquake Drill - Drop, Cover, Hold On</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/BLEPakj1YTY" title="Drop Cover Hold On Drill" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">Watch this short demonstration and practise the drill with your family.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-section" class="quiz-section py-5">
+        <div class="container py-3 py-lg-4">
+            <h2 class="fw-bold text-dark-blue text-center display-6 mb-5 px-2" data-aos="fade-up">Test Your Knowledge | Earthquake & Landslide Tech</h2>
+            <div class="carousel slide" data-bs-interval="false" id="quizCarouselEarth">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#quizCarouselEarth" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#quizCarouselEarth" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#quizCarouselEarth" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#quizCarouselEarth" data-bs-slide-to="3"></button>
+                    <button data-bs-target="#quizCarouselEarth" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner" data-aos="zoom-in">
+                    <div class="carousel-item active">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 1</h3>
+                            <p class="text-muted mb-4 fs-5">What kind of wave arrives first during an earthquake, triggering early warnings?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">S-Waves (Destructive)</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">P-Waves (Fast, harmless)</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 2</h3>
+                            <p class="text-muted mb-4 fs-5">What technology is buried in the soil to detect early signs of landslides?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Tilt sensors & moisture sensors</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Weather satellites</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 3</h3>
+                            <p class="text-muted mb-4 fs-5">What does the InSAR satellite technology measure?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Tiny changes in the Earth's surface</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Ocean temperatures</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 4</h3>
+                            <p class="text-muted mb-4 fs-5">Which app turns your phone into a mini-seismometer to detect shaking?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">MyShake</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Telegram Alert</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 5</h3>
+                            <p class="text-muted mb-4 fs-5">What is the correct safety action to practise during an earthquake?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Drop, Cover, and Hold On</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Run outside immediately</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselEarth" data-bs-slide="prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="carousel-control-next custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselEarth" data-bs-slide="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="correctAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-check-circle-fill text-success display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Correct!</h2>
+                    <p class="text-muted">Great job! You understand this technology well.</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wrongAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-x-circle-fill text-danger display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Try Again</h2>
+                    <p class="text-muted">That's not quite right. Review the information above and try again!</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex w-100" id="topbtn">
+         <div class="text-center py-3 justify-content-center">
+            <a href="" class="btn btn-sm btn-outline-secondary rounded-pill">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div> 
+    </div>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact with Us</h5>
+                    <p class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i> amethysts.pbl@gmail.com</p>
+                    <p class="mb-4 text-white-50"><i class="bi bi-geo-alt me-2"></i> Mandalay, Myanmar</p>
+                    <div class="d-flex social-icons">
+                        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="problem.html">Natural Hazards</a></li>
+                        <li><a href="explore_earth.html">Explore Technologies</a></li>
+                        <li><a href="about.html">About Us & Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Our Inspiration</h5>
+                    <div class="footer-quote">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="mb-0">Disaster risk reduction is not just about saving lives; it is about securing livelihoods, protecting investments, and building a sustainable future for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-light opacity-25">
+            <div class="text-center small text-white-50">
+                <p class="mb-1">&copy; Copyright 2026 Amethysts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethysts | Wind Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+                <img src="../media/logo.png" alt="logo" class="nav-logo">
+                <span class="brand-text">Amethysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="problem.html">Natural Hazards</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore Technologies</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="explore_earth.html" class="dropdown-item">Earth (Seismic)</a></li>
+                            <li><a href="explore_water.html" class="dropdown-item">Water (Floods)</a></li>
+                            <li><a href="explore_air.html" class="dropdown-item">Wind (Cyclones)</a></li>
+                            <li><a href="explore_fire.html" class="dropdown-item">Fire (Wildfires)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-primary rounded-pill ms-2" data-bs-toggle="offcanvas" data-bs-target="#tipsOffcanvas" title="Quick Safety Tips">
+                            <i class="bi bi-lightbulb"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="tipsOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="bi bi-shield-check me-2"></i>Quick Safety Tips</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted small mb-3 fw-bold">Small habits that save lives in Myanmar.</p>
+            <ul class="list-group quick-facts mb-4">
+                <li class="list-group-item"><i class="bi bi-phone"></i> Save local emergency numbers in your phone.</li>
+                <li class="list-group-item"><i class="bi bi-bag-check"></i> Pack a small go-bag with water, snacks, power bank.</li>
+                <li class="list-group-item"><i class="bi bi-people"></i> Agree on a family meeting point.</li>
+                <li class="list-group-item"><i class="bi bi-megaphone"></i> Follow official warnings only.</li>
+                <li class="list-group-item"><i class="bi bi-house-heart"></i> Know your nearest shelter.</li>
+            </ul>
+            <a href="pages/problem.html" class="offcanvas-action-btn">Learn More About Hazards</a>
+        </div>
+    </div>
+
+    <div class="explore-hero wind-theme">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6 hero-text-content" data-aos="fade-right">
+                    <div class="element-icon-badge mb-3"><i class="bi bi-wind"></i></div>
+                    <h1 class="fw-bold mb-3 display-3">Wind & <br> Cyclone Technologies</h1>
+                    <p class="fs-5 mb-4">Discover how Doppler radar, weather satellites, and forecasting systems help track tropical cyclones and warn communities about dangerous weather.</p>
+                    <a href="#content-section" class="btn hero-btn">Explore The Tech</a>
+                    <a href="../index.html" class="return-btn">Return to Home</a>
+                </div>
+                <div class="col-12 col-lg-6 hero-image-content d-none d-lg-block" data-aos="fade-left">
+                    <img src="../media/explorecyclone.webp" alt="Storm" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-blob d-none d-lg-block"></div>
+    </div>
+
+    <div class="container">
+        <ul class="breadcrumb-custom">
+            <li><a href="../index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+            <li><a href="problem.html">Explore</a></li>
+            <li class="active">Wind</li>
+        </ul>
+    </div>
+
+    <div id="content-section" class="container py-4 py-lg-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold text-dark-blue display-5">Tracking the Storm</h2>
+            <p class="fs-5 text-muted mx-auto max-w-700">Cyclones bring strong winds and heavy rain to coastal areas. Weather-monitoring tech helps track storms and gives communities early warnings.</p>
+        </div>
+
+        <div class="row align-items-stretch mb-5 g-3 g-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-right">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/wind_doppler.png" alt="Doppler Radar" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon wind-bg"><i class="bi bi-radar"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Doppler Weather Radar</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Doppler radar uses radio waves to detect precipitation and observe storm movement.</p>
+                            <ul class="feature-list">
+                                <li><strong>Storm Detection:</strong> Identifies heavy rainfall.</li>
+                                <li><strong>Wind Monitoring:</strong> Observes rain and storms.</li>
+                                <li><strong>Weather Updates:</strong> Supports forecasting.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#dopplerModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/wind_satellites.png" alt="Weather Satellites" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon wind-bg"><i class="bi bi-globe"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Weather Satellites</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Weather satellites observe the Earth from space and capture images of clouds and storms.</p>
+                            <ul class="feature-list">
+                                <li><strong>Cloud Monitoring:</strong> Observes storm development.</li>
+                                <li><strong>Cyclone Tracking:</strong> Identifies location and movement.</li>
+                                <li><strong>Weather Observation:</strong> Covers large areas, including oceans.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#satelliteModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/wind_tracking.png" alt="Cyclone Forecasting" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon wind-bg"><i class="bi bi-exclamation-triangle"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Cyclone Forecasting</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Meteorologists use satellite and radar data to estimate where a cyclone may travel.</p>
+                            <ul class="feature-list">
+                                <li><strong>Data Analysis:</strong> Combines multiple systems.</li>
+                                <li><strong>Path Prediction:</strong> Estimates cyclone direction.</li>
+                                <li><strong>Early Warnings:</strong> Shares updates with communities.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#warningModal"><i class="bi bi-info-circle me-2"></i> Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <div class="everyday-tech-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="feature-icon wind-bg me-3"><i class="bi bi-phone"></i></div>
+                        <h3 class="fw-bold text-dark-blue mb-0">Everyday Tech You Can Use</h3>
+                    </div>
+                    <p class="text-muted mb-4">When a cyclone is heading your way, information is your best protection. These tools can help you track the storm and get official warnings.</p>
+
+                    <div class="row g-3 g-md-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper"><img src="../media/app_moezela.jpg" alt="Moezala App" class="app-image"></div>
+                                <div class="app-icon-wrapper wind-app-icon"><i class="bi bi-cloud-sun"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Moezala Weather App</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> <em>Moezala</em> (Available on Google Play).</p>
+                                <p class="text-muted small mb-0">Use this app to check weather forecasts and severe weather warnings. It is one of the most reliable ways to get official updates for Myanmar.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper"><img src="../media/app_zoomearth.jpg" alt="Zoom Earth" class="app-image"></div>
+                                <div class="app-icon-wrapper wind-app-icon"><i class="bi bi-map"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Zoom Earth</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> <em>Zoom Earth</em> (Web & App).</p>
+                                <p class="text-muted small mb-0">Open Zoom Earth and find the satellite weather map. Choose a view showing a tropical storm or cyclone over the ocean, preferably near the Bay of Bengal.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper"><img src="../media/cyclonesafety.jpg" alt="Home Prep" class="app-image"></div>
+                                <div class="app-icon-wrapper wind-app-icon"><i class="bi bi-house-door"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Home Preparation Checklist</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> A simple checklist on your fridge.</p>
+                                <p class="text-muted small mb-0">Arrange a few emergency supplies together, such as drinking water, a flashlight, a first-aid kit, and a battery-powered radio. Take a clear photo so you know what you have.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prep-section-alt wind-prep">
+        <div class="container py-3">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Before The Storm</span>
+                <h2 class="fw-bold text-dark-blue display-5">Cyclone Preparedness Guide</h2>
+                <p class="fs-5 text-muted mx-auto max-w-700">Simple actions that save lives and reduce damage before a cyclone reaches your community.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <div class="prep-card h-100 d-flex flex-column justify-content-center p-3">
+                        <img src="../media/poster_wind.jpg" alt="Cyclone Preparedness Poster" class="img-fluid rounded-4 shadow-sm w-100">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-up">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon wind-bg"><i class="bi bi-backpack2"></i></div>
+                        <h4><i class="bi bi-box-seam me-2"></i>Special Cyclone-Kit Items</h4>
+                        <div class="supply-grid">
+                            <div class="supply-item"><i class="bi bi-droplet"></i>Hygiene supplies</div>
+                            <div class="supply-item"><i class="bi bi-capsule"></i>Personal medication</div>
+                            <div class="supply-item"><i class="bi bi-bag"></i>Plastic bags</div>
+                            <div class="supply-item"><i class="bi bi-battery-half"></i>Spare batteries</div>
+                            <div class="supply-item"><i class="bi bi-phone"></i>Waterproof phone pouch</div>
+                            <div class="supply-item"><i class="bi bi-umbrella"></i>Strong shoes / boots</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-left">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon wind-bg"><i class="bi bi-people"></i></div>
+                        <h4><i class="bi bi-house-heart me-2"></i>Family Preparedness Activities</h4>
+                        <ul class="feature-list mb-0 fs-6 lh-lg">
+                            <li><strong>Secure the surroundings</strong>, tidy the yard, remove loose objects.</li>
+                            <li><strong>Weather-warning challenge</strong>, quiz each other on warning signs.</li>
+                            <li><strong>Protect important documents</strong> in waterproof bags.</li>
+                            <li><strong>Emergency backpack challenge</strong>, pack your kit together as a family.</li>
+                        </ul>
+                        <a href="#prep-table" class="btn custom-btn mt-4 rounded-pill w-100">
+                            View Full Checklist <i class="bi bi-arrow-down ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3" id="prep-table" data-aos="fade-up">
+                <div class="col-12">
+                    <h3 class="fw-bold text-dark-blue mb-4 text-center">Preparation Activity & Why It Matters</h3>
+                    <div class="table-responsive">
+                        <table class="table activity-table align-middle">
+                            <thead>
+                                <tr>
+                                    <th class="w-50">Preparation Activity</th>
+                                    <th>Why is it important?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><i class="bi bi-house-gear me-2 text-blue-dark"></i>Secure windows and doors</td><td>Reduce damage from strong winds</td></tr>
+                                <tr><td><i class="bi bi-box-arrow-in-down me-2 text-blue-dark"></i>Bring outdoor furniture inside</td><td>Prevent objects from becoming flying hazards</td></tr>
+                                <tr><td><i class="bi bi-tree me-2 text-blue-dark"></i>Trim dangerous tree branches (with adult help)</td><td>Reduce falling-branch risks</td></tr>
+                                <tr><td><i class="bi bi-tools me-2 text-blue-dark"></i>Check the roof and repair damage before storm season</td><td>Reduce roof damage</td></tr>
+                                <tr><td><i class="bi bi-droplet-half me-2 text-blue-dark"></i>Clean drainage systems</td><td>Reduce water accumulation</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="dopplerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Doppler Weather Radar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/qhXj3s9qwTE" title="Doppler Weather Radar" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">Learn how Doppler radar detects precipitation and how it is used to track storms.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="satelliteModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Weather Satellites</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/PSrOetygS0k" title="Weather Satellites and Cyclone Tracking" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">Discover how satellites monitor weather systems from space.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="warningModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-exclamation-triangle me-2"></i>Cyclone Early Warnings</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-3 p-md-4">
+                    <div data-bs-spy="scroll" data-bs-target="#warning-list" tabindex="0" class="scrollspy-example">
+                        <h4 id="list-item-1">1. Data Collection</h4>
+                        <p class="text-muted">Satellites and radar collect data on the cyclone's size, speed, and path.</p>
+                        <h4 id="list-item-2">2. Forecasting</h4>
+                        <p class="text-muted">Computer models analyze the data to predict where the cyclone will go.</p>
+                        <h4 id="list-item-3">3. Warning Issued</h4>
+                        <p class="text-muted">Authorities issue warnings and evacuation orders to keep people safe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-section" class="quiz-section py-5">
+        <div class="container py-3 py-lg-4">
+            <h2 class="fw-bold text-dark-blue text-center display-6 mb-5 px-2" data-aos="fade-up">Test Your Knowledge | Cyclone Monitoring</h2>
+            <div class="carousel slide" data-bs-interval="false" id="quizCarouselWind">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#quizCarouselWind" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#quizCarouselWind" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#quizCarouselWind" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#quizCarouselWind" data-bs-slide-to="3"></button>
+                    <button data-bs-target="#quizCarouselWind" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner" data-aos="zoom-in">
+                    <div class="carousel-item active">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 1</h3>
+                            <p class="text-muted mb-4 fs-5">What technology uses radio waves to detect precipitation and observe storm movement?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Doppler Weather Radar</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Weather Satellites</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 2</h3>
+                            <p class="text-muted mb-4 fs-5">What do weather satellites observe from space?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Clouds and Storms</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Ocean Buoys</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 3</h3>
+                            <p class="text-muted mb-4 fs-5">Why are early warnings for cyclones issued to communities?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">To help people prepare and evacuate safely</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">To stop the storm from making landfall</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 4</h3>
+                            <p class="text-muted mb-4 fs-5">Which app is suggested for checking weather forecasts specifically for Myanmar?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Moezala Weather App</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">MyShake</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 5</h3>
+                            <p class="text-muted mb-4 fs-5">Which of these is a suggested item for a "Special Cyclone-Kit"?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">N95 Masks</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Waterproof phone pouch</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselWind" data-bs-slide="prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="carousel-control-next custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselWind" data-bs-slide="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="correctAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-check-circle-fill text-success display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Correct!</h2>
+                    <p class="text-muted">Great job! You understand this technology well.</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wrongAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-x-circle-fill text-danger display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Try Again</h2>
+                    <p class="text-muted">That's not quite right. Review the information above and try again!</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex w-100" id="topbtn">
+         <div class="text-center py-3 justify-content-center">
+            <a href="" class="btn btn-sm btn-outline-secondary rounded-pill">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div> 
+    </div>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact with Us</h5>
+                    <p class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i> amethysts.pbl@gmail.com</p>
+                    <p class="mb-4 text-white-50"><i class="bi bi-geo-alt me-2"></i> Mandalay, Myanmar</p>
+                    <div class="d-flex social-icons">
+                        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="problem.html">Natural Hazards</a></li>
+                        <li><a href="explore_earth.html">Explore Technologies</a></li>
+                        <li><a href="about.html">About Us & Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Our Inspiration</h5>
+                    <div class="footer-quote">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="mb-0">Disaster risk reduction is not just about saving lives; it is about securing livelihoods, protecting investments, and building a sustainable future for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-light opacity-25">
+            <div class="text-center small text-white-50">
+                <p class="mb-1">&copy; Copyright 2026 Amethysts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>

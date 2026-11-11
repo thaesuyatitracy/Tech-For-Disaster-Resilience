@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethysts | Natural Hazards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../media/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+                <img src="../media/logo.png" alt="logo" class="nav-logo"> <span class="brand-text">Amethysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="problem.html">Natural Hazards</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore Technologies</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="explore_earth.html" class="dropdown-item">Earth (Seismic)</a></li>
+                            <li><a href="explore_water.html" class="dropdown-item">Water (Floods)</a></li>
+                            <li><a href="explore_air.html" class="dropdown-item">Wind (Cyclones)</a></li>
+                            <li><a href="explore_fire.html" class="dropdown-item">Fire (Wildfires)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-primary rounded-pill ms-2" data-bs-toggle="offcanvas" data-bs-target="#tipsOffcanvas" title="Quick Safety Tips">
+                            <i class="bi bi-lightbulb"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="tipsOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="bi bi-shield-check me-2"></i>Quick Safety Tips</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted small mb-3 fw-bold">Small habits that save lives in Myanmar.</p>
+            <ul class="list-group quick-facts mb-4">
+                <li class="list-group-item"><i class="bi bi-phone"></i> Save local emergency numbers in your phone.</li>
+                <li class="list-group-item"><i class="bi bi-bag-check"></i> Pack a small go-bag with water, snacks, power bank.</li>
+                <li class="list-group-item"><i class="bi bi-people"></i> Agree on a family meeting point.</li>
+                <li class="list-group-item"><i class="bi bi-megaphone"></i> Follow official warnings only.</li>
+                <li class="list-group-item"><i class="bi bi-house-heart"></i> Know your nearest shelter.</li>
+            </ul>
+            <a href="pages/problem.html" class="offcanvas-action-btn">Learn More About Hazards</a>
+        </div>
+    </div>
+
+    <div class="problemandabout-hero">
+        <div class="container text-center px-3" data-aos="zoom-in">
+            <div class="problem-icon-badge mb-4">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+            <h1 class="fw-bold display-3 text-white mb-3">Understanding the Problem</h1>
+            <p class="fs-5 text-light mx-auto">
+                Let's explore what causes these hazards, their impacts, and why disaster risk reduction is important in Myanmar.
+            </p>
+        </div>
+        <svg class="problem-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#f0f8ff" fill-opacity="1" d="M0,96L80,112C160,128,320,160,480,149.3C640,139,800,85,960,74.7C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+    </div>
+
+    <div class="container mt-3">
+        <ul class="breadcrumb-custom">
+            <li><a href="../index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+            <li class="active">Natural Hazards</li>
+        </ul>
+    </div>
+
+    <section class="problem-intro">
+        <div class="container">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <span class="section-label">Understanding Disaster Risks</span>
+                    <h2 class="problem-intro-title">Why Is Myanmar Vulnerable to Natural Hazards?</h2>
+                    <div class="title-divider"></div>
+                    <p>Myanmar experiences different natural hazards because of its geographical location, climate, and natural environment. Earthquakes, floods, cyclones, landslides, and wildfires can affect communities in different parts of the country.</p>
+                    <p>These hazards can become disasters when they affect people, homes, infrastructure, and livelihoods. Understanding their causes and possible impacts is an important first step towards reducing disaster risks.</p>
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+                    <div class="hazard-overview">
+                        <div class="hazard-overview-heading">
+                            <h4>Four Types of Hazards</h4>
+                            <p>Explore the different risks communities may face.</p>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="hazard-mini-card">
+                                    <i class="bi bi-activity earth-text"></i>
+                                    <h5>Earth</h5>
+                                    <p>Earthquakes and landslides</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="hazard-mini-card">
+                                    <i class="bi bi-water water-text"></i>
+                                    <h5>Water</h5>
+                                    <p>Floods and tsunamis</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="hazard-mini-card">
+                                    <i class="bi bi-wind wind-text"></i>
+                                    <h5>Wind</h5>
+                                    <p>Cyclones and severe storms</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="hazard-mini-card">
+                                    <i class="bi bi-fire fire-text"></i>
+                                    <h5>Fire</h5>
+                                    <p>Wildfires</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="causes-section py-5">
+        <div class="container">
+            <div class="text-center mb-5 px-2" data-aos="fade-up">
+                <h2 class="fw-bold text-dark-blue display-5">Causes and Consequences</h2>
+                <div class="title-divider mx-auto"></div>
+            </div>
+
+            <div class="row align-items-center mb-5 g-3 g-lg-4">
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <img src="../media/problem_earth.jpg" alt="Earthquake" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+                    <div class="disaster-text-box">
+                        <span class="disaster-number earth-bg">Earth</span>
+                        <h3 class="fw-bold text-dark-blue mt-3">Earthquakes and Landslides</h3>
+                        <p class="text-muted"><strong>Causes:</strong> Earthquakes occur when built-up energy is suddenly released along faults in the Earth's crust. Landslides happen when soil and rocks move down unstable slopes, often due to heavy rainfall or earthquakes.</p>
+                        <p class="text-muted"><strong>Consequences:</strong> They can damage buildings, roads, and bridges, destroy homes, and cause injuries or loss of life.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 g-3 g-lg-4 flex-lg-row-reverse">
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+                    <img src="../media/problem_water.jpg" alt="Flood" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <div class="disaster-text-box">
+                        <span class="disaster-number water-bg">Water</span>
+                        <h3 class="fw-bold text-dark-blue mt-3">Floods and Tsunamis</h3>
+                        <p class="text-muted"><strong>Causes:</strong> Floods can happen because of heavy rainfall, overflowing rivers, and poor drainage. Tsunamis are usually caused by underwater earthquakes and other sudden movements of the ocean floor.</p>
+                        <p class="text-muted"><strong>Consequences:</strong> Flooding can damage houses, farmland, roads, and water supplies. Tsunamis can cause severe coastal damage and threaten communities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 g-3 g-lg-4">
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <img src="../media/problem_wind.avif" alt="Cyclone" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+                    <div class="disaster-text-box">
+                        <span class="disaster-number wind-bg">Wind</span>
+                        <h3 class="fw-bold text-dark-blue mt-3">Cyclones and Severe Storms</h3>
+                        <p class="text-muted"><strong>Causes:</strong> Tropical cyclones develop over warm ocean waters under suitable atmospheric conditions. They bring strong winds, heavy rainfall, and sometimes storm surges.</p>
+                        <p class="text-muted"><strong>Consequences:</strong> Strong winds and flooding can damage houses, trees, power lines, and transportation systems. Coastal communities may also face dangerous storm surges.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 g-3 g-lg-4 flex-lg-row-reverse">
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+                    <img src="../media/problem_fire.webp" alt="Wildfire" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <div class="disaster-text-box">
+                        <span class="disaster-number fire-bg">Fire</span>
+                        <h3 class="fw-bold text-dark-blue mt-3">Wildfires</h3>
+                        <p class="text-muted"><strong>Causes:</strong> Wildfires can begin naturally through lightning or through human activities. Dry vegetation, hot weather, and strong winds can help fires spread.</p>
+                        <p class="text-muted"><strong>Consequences:</strong> Wildfires destroy forests and habitats, affect air quality, threaten nearby communities, and damage natural resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="references-section">
+        <div class="container px-3" data-aos="fade-up">
+            <div class="references-card">
+                <h4 class="fw-bold text-dark-blue mb-3"><i class="bi bi-journal-text me-2"></i>References</h4>
+                <ul class="ref-list small mb-0">
+                    <li>USGS. <em>Earthquakes & Landslide Hazards.</em> <a href="https://www.usgs.gov/programs/landslide-hazards" target="_blank">usgs.gov</a></li>
+                    <li>World Meteorological Organization. <em>Floods & Tropical Cyclones.</em> <a href="https://wmo.int/" target="_blank">wmo.int</a></li>
+                    <li>NOAA. <em>Tsunamis.</em> <a href="https://www.noaa.gov/education/resource-collections/ocean-coasts/tsunamis" target="_blank">noaa.gov</a></li>
+                    <li>Department of Meteorology and Hydrology, Myanmar. <a href="https://www.dmh.gov.mm/" target="_blank">dmh.gov.mm</a></li>
+                    <li>FAO. <em>Fire Management.</em> <a href="https://www.fao.org/forestry" target="_blank">fao.org</a></li>
+                    <li>UNDRR. <em>Sendai Framework for DRR 2015-2030.</em> <a href="https://www.undrr.org/publication/sendai-framework-disaster-risk-reduction-2015-2030" target="_blank">undrr.org</a></li>
+                </ul>
+                <p class="text-muted small mb-0 mt-3"><i class="bi bi-image me-1"></i>Photos: Bing Images, iStock, Times Now News - used for educational purposes only.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4 py-lg-5">
+        <div class="text-center mb-5 px-2" data-aos="fade-up">
+            <h2 class="fw-bold text-dark-blue display-5">How Do Disasters Affect Communities?</h2>
+            <!-- Changed max-w-700 to max-w-900 here -->
+            <p class="fs-5 text-muted mx-auto max-w-900">Natural hazards affect nearby and distant places, with impacts lasting long after the event and slowing recovery.</p>
+        </div>
+
+        <div class="row g-3 g-md-4 text-center">
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="impact-card h-100">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h5 class="fw-bold text-dark-blue mt-3">People and Health</h5>
+                    <p class="text-muted small mb-0">People may experience injuries, displacement, illness, and difficulties accessing basic needs.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="impact-card h-100">
+                    <i class="bi bi-house-door"></i>
+                    <h5 class="fw-bold text-dark-blue mt-3">Homes and Infrastructure</h5>
+                    <p class="text-muted small mb-0">Homes, schools, hospitals, roads, and electricity systems can be damaged or destroyed.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="impact-card h-100">
+                    <i class="bi bi-tree"></i>
+                    <h5 class="fw-bold text-dark-blue mt-3">Environment</h5>
+                    <p class="text-muted small mb-0">Natural habitats can be damaged, forests destroyed, and water sources contaminated.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="impact-card h-100">
+                    <i class="bi bi-cash-coin"></i>
+                    <h5 class="fw-bold text-dark-blue mt-3">Economy and Livelihoods</h5>
+                    <p class="text-muted small mb-0">Businesses, agriculture, and local jobs can be disrupted, making recovery more difficult.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="drr-section py-5">
+        <div class="container py-3 py-lg-4">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="fw-bold text-white display-5 mb-3">Preparing Today for a Safer Tomorrow</h2>
+                    <p class="text-white-50 fs-5 mb-0">We cannot completely prevent natural hazards from happening, but we can reduce the risks and their impacts through proper preparation.</p>
+                </div>
+                <div class="col-12 col-lg-7" data-aos="fade-left">
+                    <div class="accordion custom-accordion-dark" id="drrAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#drr1">
+                                    <i class="bi bi-book me-2"></i> 1. Understanding Hazards
+                                </button>
+                            </h2>
+                            <div id="drr1" class="accordion-collapse collapse show" data-bs-parent="#drrAccordion">
+                                <div class="accordion-body">Knowing what hazards exist in your area, how often they happen, and what causes them is the foundation of DRR.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#drr2">
+                                    <i class="bi bi-shield-check me-2"></i> 2. Reducing Vulnerability
+                                </button>
+                            </h2>
+                            <div id="drr2" class="accordion-collapse collapse" data-bs-parent="#drrAccordion">
+                                <div class="accordion-body">This involves building stronger homes, avoiding building in high-risk areas, and ensuring communities have the resources to protect themselves.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#drr3">
+                                    <i class="bi bi-megaphone me-2"></i> 3. Improving Preparedness
+                                </button>
+                            </h2>
+                            <div id="drr3" class="accordion-collapse collapse" data-bs-parent="#drrAccordion">
+                                <div class="accordion-body">Creating evacuation plans, stocking emergency kits, and practicing drills so that people know exactly what to do when a disaster strikes.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4 py-lg-5 my-3 my-lg-4 text-center px-3" data-aos="zoom-in">
+        <h2 class="fw-bold text-dark-blue display-5 mb-4">How Can Technology Help?</h2>
+        <!-- Changed max-w-700 to max-w-900 here -->
+        <p class="fs-5 text-muted mx-auto max-w-900 mb-5">Now that you understand the causes and consequences of different hazards, explore the technologies that can help monitor risks, provide early warnings, and protect communities.</p>
+        <a href="explore_earth.html" class="btn custom-btn btn-lg rounded-pill px-5 py-3">Explore Technologies</a>
+    </div>
+
+    <div class="container flex w-100" id="topbtn">
+         <div class="text-center py-3 justify-content-center">
+            <a href="" class="btn btn-sm btn-outline-secondary rounded-pill">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div> 
+    </div>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact with Us</h5>
+                    <p class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i> amethysts.pbl@gmail.com</p>
+                    <p class="mb-4 text-white-50"><i class="bi bi-geo-alt me-2"></i> Mandalay, Myanmar</p>
+                    <div class="d-flex social-icons">
+                        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="problem.html">Natural Hazards</a></li>
+                        <li><a href="explore_earth.html">Explore Technologies</a></li>
+                        <li><a href="about.html">About Us & Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Our Inspiration</h5>
+                    <div class="footer-quote">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="mb-0">Disaster risk reduction is not just about saving lives; it is about securing livelihoods, protecting investments, and building a sustainable future for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-light opacity-25">
+            <div class="text-center small text-white-50">
+                <p class="mb-1">&copy; Copyright 2026 Amethysts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>

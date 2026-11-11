@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethysts | Fire Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+                <img src="../media/logo.png" alt="logo" class="nav-logo">
+                <span class="brand-text">Amethysts</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="problem.html">Natural Hazards</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore Technologies</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="explore_earth.html" class="dropdown-item">Earth (Seismic)</a></li>
+                            <li><a href="explore_water.html" class="dropdown-item">Water (Floods)</a></li>
+                            <li><a href="explore_air.html" class="dropdown-item">Wind (Cyclones)</a></li>
+                            <li><a href="explore_fire.html" class="dropdown-item">Fire (Wildfires)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm btn-outline-primary rounded-pill ms-2" data-bs-toggle="offcanvas" data-bs-target="#tipsOffcanvas" title="Quick Safety Tips">
+                            <i class="bi bi-lightbulb"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="tipsOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="bi bi-shield-check me-2"></i>Quick Safety Tips</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted small mb-3 fw-bold">Small habits that save lives in Myanmar.</p>
+            <ul class="list-group quick-facts mb-4">
+                <li class="list-group-item"><i class="bi bi-phone"></i> Save local emergency numbers in your phone.</li>
+                <li class="list-group-item"><i class="bi bi-bag-check"></i> Pack a small go-bag with water, snacks, power bank.</li>
+                <li class="list-group-item"><i class="bi bi-people"></i> Agree on a family meeting point.</li>
+                <li class="list-group-item"><i class="bi bi-megaphone"></i> Follow official warnings only.</li>
+                <li class="list-group-item"><i class="bi bi-house-heart"></i> Know your nearest shelter.</li>
+            </ul>
+            <a href="pages/problem.html" class="offcanvas-action-btn">Learn More About Hazards</a>
+        </div>
+    </div>
+
+    <div class="explore-hero fire-theme">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6 hero-text-content" data-aos="fade-right">
+                    <div class="element-icon-badge mb-3"><i class="bi bi-fire"></i></div>
+                    <h1 class="fw-bold mb-3 display-3">Fire & <br> Wildfire Technologies</h1>
+                    <p class="fs-5 mb-4">Discover how thermal imaging satellites, drones, and monitoring systems help detect wildfires and observe how fires spread.</p>
+                    <a href="#content-section" class="btn hero-btn">Explore The Tech</a>
+                    <a href="../index.html" class="return-btn">Return to Home</a>
+                </div>
+                <div class="col-12 col-lg-6 hero-image-content d-none d-lg-block" data-aos="fade-left">
+                    <img src="../media/explorefire.jpg" alt="Wildfire" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-blob d-none d-lg-block"></div>
+    </div>
+
+    <div class="container">
+        <ul class="breadcrumb-custom">
+            <li><a href="../index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+            <li><a href="problem.html">Explore</a></li>
+            <li class="active">Fire</li>
+        </ul>
+    </div>
+
+    <div id="content-section" class="container py-4 py-lg-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold text-dark-blue display-5">Detecting Fire Before It Spreads</h2>
+            <p class="fs-5 text-muted mx-auto max-w-700">Wildfires spread quickly, damaging forests and communities. Modern tech helps detect unusual heat early and supports firefighting efforts.</p>
+        </div>
+
+        <div class="row align-items-stretch mb-5 g-3 g-lg-4">
+            <div class="col-12 col-lg-4" data-aos="fade-right">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/fire_satellites.png" alt="Satellite" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon fire-bg"><i class="bi bi-thermometer-high"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Thermal Imaging Satellites</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Thermal imaging satellites detect heat patterns on the Earth's surface.</p>
+                            <ul class="feature-list">
+                                <li><strong>Heat Detection:</strong> Identifies high temperatures.</li>
+                                <li><strong>Fire Location:</strong> Spots developing fires.</li>
+                                <li><strong>Large-Area Monitoring:</strong> Observes remote forests.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#satelliteModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/fire_drone.png" alt="Drone" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon fire-bg"><i class="bi bi-airplane"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">Fire Monitoring Drones</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Drones equipped with cameras and thermal sensors can fly over areas affected by wildfires.</p>
+                            <ul class="feature-list">
+                                <li><strong>Aerial Observation:</strong> Captures images from above.</li>
+                                <li><strong>Thermal Cameras:</strong> Detects high temperatures.</li>
+                                <li><strong>Situation Monitoring:</strong> Observes changes in fires.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#droneModal"><i class="bi bi-play-circle me-2"></i> Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="../media/ai_detectors.png" alt="AI Fire Risk" class="feature-image">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="feature-header">
+                            <div class="feature-icon fire-bg"><i class="bi bi-cpu"></i></div>
+                            <h3 class="fw-bold text-dark-blue mb-0">AI Fire Risk Prediction</h3>
+                        </div>
+                        <div class="feature-content">
+                            <p class="text-muted">Artificial Intelligence analyzes weather, vegetation, and historical data to predict fire risks.</p>
+                            <ul class="feature-list">
+                                <li><strong>Risk Mapping:</strong> Highlights high-danger zones.</li>
+                                <li><strong>Weather Analysis:</strong> Tracks dry and windy conditions.</li>
+                                <li><strong>Early Prevention:</strong> Helps teams prepare before fire starts.</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid gap-2 mt-auto">
+                            <button class="btn action-btn" data-bs-toggle="modal" data-bs-target="#aiFireModal"><i class="bi bi-info-circle me-2"></i> Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <div class="everyday-tech-card">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="feature-icon fire-bg me-3"><i class="bi bi-phone"></i></div>
+                        <h3 class="fw-bold text-dark-blue mb-0">Everyday Tech You Can Use</h3>
+                    </div>
+                    <p class="text-muted mb-4">You don't need a drone to help prevent wildfires. Simple community tools and a little awareness can make a huge difference.</p>
+
+                    <div class="row g-3 g-md-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper"><img src="../media/app_NASAfire.png" alt="NASA FIRMS" class="app-image"></div>
+                                <div class="app-icon-wrapper fire-app-icon"><i class="bi bi-camera"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">NASA FIRMS Fire Map</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> <em>NASA FIRMS Fire Map</em> (Website).</p>
+                                <p class="text-muted small mb-0">Open the map and take a screenshot showing the active-fire markers. NASA explains that these are satellite-detected thermal anomalies, not confirmation that every marked location is an actual fire.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper"><img src="../media/app_viberfire.jpg" alt="Viber Group" class="app-image"></div>
+                                <div class="app-icon-wrapper fire-app-icon"><i class="bi bi-chat-dots"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">FireTrack Fiji | Community Fire Safety</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> Explore the FireTrack Fiji Viber community.</p>
+                                <p class="text-muted small mb-0">FireTrack Fiji is a platform that helps communities stay informed about fire safety by sharing fire alerts, safety tips, prevention guidelines, and useful resources.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="app-recommendation h-100">
+                                <div class="app-image-wrapper"><img src="../media/firesafety.jpg" alt="Fire Safety" class="app-image"></div>
+                                <div class="app-icon-wrapper fire-app-icon"><i class="bi bi-fire"></i></div>
+                                <h5 class="fw-bold text-dark-blue mt-3">Fire Safety Preparation</h5>
+                                <p class="text-muted small mb-2"><strong>Try:</strong> Check your home equipment.</p>
+                                <p class="text-muted small mb-0">Take a photo of fire-safety equipment, such as a smoke alarm, fire extinguisher, or clearly marked emergency exit. Make sure the equipment is visible and the photo is bright.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prep-section fire-prep">
+        <div class="container py-3">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-label">Stop Fire Before It Spreads</span>
+                <h2 class="fw-bold text-dark-blue display-5">Wildfire Preparedness</h2>
+                <p class="fs-5 text-muted mx-auto max-w-700">Wildfires often begin with a single spark. Small, careful habits can prevent them, and save homes, forests, and lives.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-12 col-lg-4" data-aos="fade-right">
+                    <div class="prep-card h-100 d-flex flex-column justify-content-center p-3">
+                        <img src="../media/poster_fire.jpg" alt="Wildfire Preparedness Poster" class="img-fluid rounded-4 shadow-sm w-100">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-up">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon fire-bg"><i class="bi bi-backpack2"></i></div>
+                        <h4><i class="bi bi-box-seam me-2"></i>Special Wildfire-Kit Items</h4>
+                        <div class="supply-grid">
+                            <div class="supply-item"><i class="bi bi-mask"></i>N95 masks</div>
+                            <div class="supply-item"><i class="bi bi-eyeglasses"></i>Goggles / eye protection</div>
+                            <div class="supply-item"><i class="bi bi-broadcast"></i>Battery-powered radio</div>
+                            <div class="supply-item"><i class="bi bi-fire"></i>Small fire extinguisher</div>
+                            <div class="supply-item"><i class="bi bi-person-arms-up"></i>Long-sleeved cotton clothing</div>
+                            <div class="supply-item"><i class="bi bi-megaphone"></i>Emergency whistle</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4" data-aos="fade-left">
+                    <div class="prep-card h-100">
+                        <div class="prep-icon fire-bg"><i class="bi bi-person-check"></i></div>
+                        <h4><i class="bi bi-list-check me-2"></i>Habits to Practise</h4>
+                        <div class="habit-item"><div class="habit-num">1</div><p>Never play with matches or lighters near dry grass.</p></div>
+                        <div class="habit-item"><div class="habit-num">2</div><p>Report any smoke or fire immediately to an adult.</p></div>
+                        <div class="habit-item"><div class="habit-num">3</div><p>Keep your home clear of dry leaves and rubbish.</p></div>
+                        <div class="habit-item"><div class="habit-num">4</div><p>Never try to fight a fire yourself, leave it to firefighters.</p></div>
+                        <div class="habit-item"><div class="habit-num">5</div><p>Remind adults not to burn rubbish on windy days.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-12">
+                    <h3 class="fw-bold text-dark-blue mb-4 text-center">Before, During & After a Wildfire</h3>
+                    <ul class="nav nav-tabs prep-tabs" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fire-before" type="button">Before</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fire-during" type="button">During</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fire-after" type="button">After</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content prep-tab-content">
+                        <div class="tab-pane fade show active" id="fire-before">
+                            <h5 class="fw-bold text-dark-blue mb-3"><i class="bi bi-shield-check me-2"></i>Before the Fire</h5>
+                            <div class="habit-item"><div class="habit-num">1</div><p>Create a defensible space around your home (5 to 10 metres of cleared vegetation).</p></div>
+                            <div class="habit-item"><div class="habit-num">2</div><p>Check smoke alarms monthly and replace batteries yearly.</p></div>
+                            <div class="habit-item"><div class="habit-num">3</div><p>Agree on a family meeting point outside the danger zone.</p></div>
+                            <div class="habit-item"><div class="habit-num">4</div><p>Prepare a "go-bag" for each family member.</p></div>
+                        </div>
+                        <div class="tab-pane fade" id="fire-during">
+                            <h5 class="fw-bold text-dark-blue mb-3"><i class="bi bi-exclamation-triangle me-2"></i>During the Fire</h5>
+                            <div class="habit-item"><div class="habit-num">1</div><p>Evacuate immediately when authorities say to.</p></div>
+                            <div class="habit-item"><div class="habit-num">2</div><p>Stay low to avoid smoke; cover your nose with a damp cloth.</p></div>
+                            <div class="habit-item"><div class="habit-num">3</div><p>Follow official instructions, never re-enter your home.</p></div>
+                        </div>
+                        <div class="tab-pane fade" id="fire-after">
+                            <h5 class="fw-bold text-dark-blue mb-3"><i class="bi bi-house-check me-2"></i>After the Fire</h5>
+                            <div class="habit-item"><div class="habit-num">1</div><p>Only return when authorities say it is safe.</p></div>
+                            <div class="habit-item"><div class="habit-num">2</div><p>Watch for hot spots, the ground can stay hot for hours.</p></div>
+                            <div class="habit-item"><div class="habit-num">3</div><p>Check on neighbours, especially elderly people.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="satelliteModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Thermal Imaging Satellites</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/SSd7KnWN9CM" title="How Satellites Detect Wildfires" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">Learn how satellites use thermal imaging to detect heat signatures from space.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="droneModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-play-circle me-2"></i>Fire Monitoring Drones</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/iIJIgJ7wUng" title="Fire Monitoring Drones" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-3 p-md-4"><p class="text-muted mb-0">See how drones are used to monitor and map wildfires safely from above.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="aiFireModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-dark text-white border-0">
+                    <h5 class="modal-title"><i class="bi bi-cpu me-2"></i>AI Fire Risk Prediction</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-3 p-md-4">
+                    <p class="text-muted">Artificial Intelligence uses past fire data, weather conditions, and satellite imagery to predict where fires are most likely to start or spread.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-section" class="quiz-section py-5">
+        <div class="container py-3 py-lg-4">
+            <h2 class="fw-bold text-dark-blue text-center display-6 mb-5 px-2" data-aos="fade-up">Test Your Knowledge | Wildfire Detection Tech</h2>
+            <div class="carousel slide" data-bs-interval="false" id="quizCarouselFire">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#quizCarouselFire" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#quizCarouselFire" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#quizCarouselFire" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#quizCarouselFire" data-bs-slide-to="3"></button>
+                    <button data-bs-target="#quizCarouselFire" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner" data-aos="zoom-in">
+                    <div class="carousel-item active">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 1</h3>
+                            <p class="text-muted mb-4 fs-5">What technology detects heat patterns on the Earth's surface to spot wildfires?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Thermal Imaging Satellites</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Tilt Sensors</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 2</h3>
+                            <p class="text-muted mb-4 fs-5">What equipment is used to fly over wildfires and capture thermal images from above?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Fire Monitoring Drones</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Ocean Buoys</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 3</h3>
+                            <p class="text-muted mb-4 fs-5">What does Artificial Intelligence analyze to predict fire risks?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Weather, vegetation, and historical data</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Ocean currents and tides</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 4</h3>
+                            <p class="text-muted mb-4 fs-5">What does NASA FIRMS Fire Map show?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Satellite-detected thermal anomalies</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Wind speeds and direction</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quiz-card text-center p-4 p-md-5 mx-auto">
+                            <h3 class="fw-bold text-dark-blue mb-4">Question 5</h3>
+                            <p class="text-muted mb-4 fs-5">What should you do if you see a small fire starting near dry grass?</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#wrongAnswerModal">Try to put it out yourself</button>
+                                <button class="btn quiz-option-btn" data-bs-toggle="modal" data-bs-target="#correctAnswerModal">Report it immediately to an adult</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselFire" data-bs-slide="prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="carousel-control-next custom-carousel-btn d-none d-md-flex" data-bs-target="#quizCarouselFire" data-bs-slide="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="correctAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-check-circle-fill text-success display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Correct!</h2>
+                    <p class="text-muted">Great job! You understand this technology well.</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wrongAnswerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 shadow-lg rounded-4">
+                <div class="modal-body p-4 p-md-5">
+                    <i class="bi bi-x-circle-fill text-danger display-1 mb-3"></i>
+                    <h2 class="fw-bold text-dark-blue mb-3">Try Again</h2>
+                    <p class="text-muted">That's not quite right. Review the information above and try again!</p>
+                    <button type="button" class="btn custom-btn mt-3 rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex w-100" id="topbtn">
+         <div class="text-center py-3 justify-content-center">
+            <a href="" class="btn btn-sm btn-outline-secondary rounded-pill">
+                <i class="bi bi-arrow-up"></i>
+            </a>
+        </div> 
+    </div>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact with Us</h5>
+                    <p class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i> amethysts.pbl@gmail.com</p>
+                    <p class="mb-4 text-white-50"><i class="bi bi-geo-alt me-2"></i> Mandalay, Myanmar</p>
+                    <div class="d-flex social-icons">
+                        <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="problem.html">Natural Hazards</a></li>
+                        <li><a href="explore_earth.html">Explore Technologies</a></li>
+                        <li><a href="about.html">About Us & Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Our Inspiration</h5>
+                    <div class="footer-quote">
+                        <i class="bi bi-quote quote-icon"></i>
+                        <p class="mb-0">Disaster risk reduction is not just about saving lives; it is about securing livelihoods, protecting investments, and building a sustainable future for everyone.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-light opacity-25">
+            <div class="text-center small text-white-50">
+                <p class="mb-1">&copy; Copyright 2026 Amethysts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+</body>
+</html>
